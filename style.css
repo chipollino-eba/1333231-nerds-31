@@ -19,6 +19,7 @@
   --special-grey: #dfdfdf;
   --special-dark-gray: #d5d5d5;
   --special-light-gray: #666666;
+  --special-light-black-gray: #d5d5d5;
   --special-light-white: #d7dcde;
 }
 
@@ -121,11 +122,16 @@
 
 /* Features */
 
+.features {
+  background-color: var(--basic-light-gray);
+}
+
 .slogan {
   text-transform: none;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  background-color: var(--basic-light-gray);
 }
 
 .features-item {
@@ -254,6 +260,7 @@
 .partners-list .partners1:focus {
   background: url("./img/bg-academy.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .partners-list .partners1:active {
@@ -276,6 +283,7 @@
 .partners-list .partners3:focus {
   background: url("./img/bg-pink.png");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .partners-list .partners3:active {
@@ -287,6 +295,7 @@
 .partners-list .partners4:focus {
   background: url("./img/bg-mishka.png");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .partners-list .partners4:active {
@@ -318,15 +327,18 @@
   line-height: 18px;
   color: var(--basic-white);
   background-color: var(--basic-light-pink-red);
+  border-radius: 3px;
 }
 
 .form .btn:hover,
 .form .btn:focus {
   background-color: var(--special-red);
+  cursor: pointer;
 }
 
 .form .btn:active {
   background-color: var(--special-dark-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .popup-text {
@@ -337,6 +349,28 @@
 .popup-item {
   line-height: 18px;
   font-weight: 700;
+}
+
+.popup-item :hover,
+.popup-item :focus {
+  border: 2px solid red;
+  border-color: var(--basic-light-pink-red);
+}
+
+.popup .btn {
+  border-radius: 3px;
+}
+
+.popup .btn:hover,
+.popup .btn:focus {
+  background-color: var(--special-red);
+  cursor: pointer;
+}
+
+.popup .btn:active {
+  background-color: var(--special-dark-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
 }
 
 .send {
@@ -351,6 +385,7 @@
 .send :hover,
 .send :focus {
   background-color: var(--special-red);
+  cursor: pointer;
 }
 
 .send :active {
@@ -372,5 +407,204 @@
 .footer-sale {
   font-size: 16px;
   line-height: 22px;
+}
+
+/* Catalog */
+
+.filter {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.range {
+  background-color: var(--basic-light-gray);
+}
+
+.range-list {
+  list-style: none;
+}
+
+.range-price {
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--basic-dark-blue);
+}
+
+.price {
+  background-color: var(--basic-light-gray);
+}
+
+.filter-list {
+  list-style: none;
+}
+
+.filter-grid {
+  border: none;
+}
+
+.grid-list {
+  list-style: none;
+  color: var(--basic-dark-blue);
+}
+
+.chips-list {
+  list-style: none;
+  color: var(--basic-dark-blue);
+}
+
+.grid-item {
+  line-height: 20px;
+}
+
+.grid-item :hover,
+.grid-item :focus {
+  cursor: pointer;
+}
+
+.grid-item :active {
+  opacity: 0.3;
+}
+
+.chips-item {
+  line-height: 20px;
+}
+
+.chips-item :hover,
+.chips-item :focus {
+  cursor: pointer;
+}
+
+.chips-item :active {
+  opacity: 0.3;
+}
+
+.show {
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 3px;
+  background-color: transparent;
+  background-color: var(--basic-light-gray);
+}
+
+.filter-grid .show:hover,
+.filter-grid .show:focus {
+  background-color: var(--special-grey);
+  cursor: pointer;
+}
+
+.filter-grid .show:active {
+  background-color: var(--special-dark-gray);
+}
+
+.btn-sort {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 0;
+  background-color: transparent;
+  opacity: 0.3;
+}
+
+.btn-price {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+.filter-list .filter-item .btn-type:hover,
+.filter-list .filter-item .btn-type:focus {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.filter-list .filter-item .btn-type:active {
+  opacity: 1;
+  color: var(--basic-black);
+}
+
+.filter-list .filter-item .btn-name:hover,
+.filter-list .filter-item .btn-name:focus {
+  opacity: 0.6;
+}
+
+.filter-list .filter-item .btn-name:active {
+  opacity: 1;
+  color: var(--basic-black);
+}
+
+.project-list {
+  list-style: none;
+}
+
+.project-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.project-item .project-name:hover,
+.project-item .project-name:focus {
+  color: var(--basic-light-pink-red);
+  cursor: pointer;
+}
+
+.project-item .project-name:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.project-description {
+  line-height: 16px;
+  color: var(--special-light-gray);
+}
+
+.buy-price {
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--basic-white);
+}
+
+.buy .btn {
+  background-color: var(--basic-light-pink-red);
+}
+
+.buy .btn {
+  border: 0;
+  border-radius: 3px;
+}
+
+.buy .btn:hover,
+.buy .btn:focus {
+  background-color: var(--special-red);
+  cursor: pointer;
+}
+
+.buy .btn:active {
+  background-color: var(--special-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
+}
+
+.control-list {
+  list-style: none;
+}
+
+.control-item .btn {
+  background-color: var(--basic-light-gray);
+  border-radius: 3px;
+}
+
+.control-item .btn:hover,
+.control-item .btn:focus {
+  background-color: var(--special-grey);
+}
+
+.control-item .btn:active {
+  background-color: var(--special-grey);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
 }
 /*  */
