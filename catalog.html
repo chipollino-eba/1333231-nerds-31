@@ -12,10 +12,10 @@
   <link href="normalize.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
+<body class="page-body container">
 
   <div class="wrapper">
-    <h2>Дизайн-студия Нёрдс</h2>
+    <!-- <h2>Дизайн-студия Нёрдс</h2> -->
 
     <header class="main-header">
 
@@ -36,26 +36,12 @@
         </div>
       </nav>
     </header>
-    <h1 class="slogan">Магазин готовых шаблонов</h1>
+    <h1 class="slogan score">Магазин готовых шаблонов</h1>
   </div>
 
-  <main class="container">
+  <main class="container template-box">
 
-    <h1>Шаблоны</h1>
-    <h2 class="filter">Сортировать:</h2>
-    <ul class="filter-list">
-      <li class="filter-item"><button class="btn-sort btn-price" type="button" disabled>По цене</button></li>
-      <li class="filter-item"><button class="btn-sort btn-type" type="button">По типу</button></li>
-      <li class="filter-item"><button class="btn-sort btn-name" type="button">По названию</button></li>
-      <li class="filter-item"><button class="btn-up" type="button"></button></li>
-      <li class="filter-item"><button class="btn-down" type="button"></button></li>
-    </ul>
-
-
-
-
-    <section>
-      <h2>Фильтр шаблонов</h2>
+    <section class="filter-box">
 
       <h2 class="filter">Стоимость:</h2>
 
@@ -118,77 +104,98 @@
 
     </section>
 
-    <section>
-      <h2>Примеры шаблонов</h2>
-      <ul class="project-list">
-        <li class="project-item">
-          <img class="pic" src="./img/sedona.png" width="358" height="578" alt="Фото макета Седона">
-          <p class="project-name">SEDONA</p>
-          <p class="project-description">Информационный сайт для туристов</p>
-          <p class="buy">
-            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-          </p>
-        </li>
-        <li class="project-item">
-          <img class="pic" src="./img/pink.png" width="358" height="578" alt="Фото макета Пинк Апп">
-          <p class="project-name">PINK APP</p>
-          <p class="project-description">Продуктовый лендингприложения для iOS и Android</p>
-          <p class="buy">
-            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-          </p>
-        </li>
-        <li class="project-item">
-          <img class="pic" src="./img/borodinsky.png" width="358" height="578" alt="Фото макета Барбершоп Бородинский">
-          <p class="project-name">BARBERSHOP</p>
-          <p class="project-description">Сайт салона красоты. Для мужчин, да.</p>
-          <p class="buy">
-            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-          </p>
-        </li>
-        <li class="project-item">
-          <img class="pic" src="./img/mishka.png" width="358" height="578" alt="Фото макета Мишка">
-          <p class="project-name">MISHKA</p>
-          <p class="project-description">Интернет-магазин вязаных игрушек</p>
-          <p class="buy">
-            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-          </p>
-        </li>
-        <li class="project-item">
-          <img class="pic" src="./img/aplus.png" width="358" height="578" alt="Фото макета А Плюс">
-          <p class="project-name">A PLUS</p>
-          <p class="project-description">Лендинг курсов повышения квалификации</p>
-          <p class="buy">
-            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-          </p>
-        </li>
-        <li class="project-item">
-          <img class="pic" src="./img/kvast.png" width="358" height="578" alt="Фото макета Кваст">
-          <p class="project-name">КВАСТ</p>
-          <p class="project-description">Промо-сайт производителя крафтового кваса</p>
-          <p class="buy">
-            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-          </p>
-        </li>
+    <div class="sort-box">
+      <h2 class="filter">Сортировать:</h2>
+      <ul class="filter-list">
+        <li class="filter-item"><button class="btn-sort btn-price" type="button" disabled>По цене</button></li>
+        <li class="filter-item"><button class="btn-sort btn-type" type="button">По типу</button></li>
+        <li class="filter-item"><button class="btn-sort btn-name" type="button">По названию</button></li>
+        <li class="filter-item"><button class="btn-up" type="button"></button></li>
+        <li class="filter-item"><button class="btn-down" type="button"></button></li>
       </ul>
-    </section>
 
-    <section class="control">
-      <ul class="control-list">
-        <li class="control-item">
-          <a class="btn link">1</a>
-        </li>
-        <li class="control-item">
-          <a class="btn link" href="#">2</a>
-        </li>
-        <li class="control-item">
-          <a class="btn link" href="#">3</a>
-        </li>
-        <li class="control-item">
-          <a class="btn link" href="#">Следущая</a>
-        </li>
-      </ul>
-    </section>
+      <section class="examples-box">
 
+        <!-- <h2>Примеры шаблонов</h2> -->
+
+        <ul class="project-list">
+
+          <li class="project-item">
+            <img class="pic" src="./img/sedona.png" width="358" height="578" alt="Фото макета Седона">
+            <p class="project-name">SEDONA</p>
+            <p class="project-description">Информационный сайт для туристов</p>
+            <p class="buy">
+              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+            </p>
+          </li>
+
+          <li class="project-item">
+            <img class="pic" src="./img/pink.png" width="358" height="578" alt="Фото макета Пинк Апп">
+            <p class="project-name">PINK APP</p>
+            <p class="project-description">Продуктовый лендингприложения для iOS и Android</p>
+            <p class="buy">
+              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+            </p>
+          </li>
+
+          <li class="project-item">
+            <img class="pic" src="./img/borodinsky.png" width="358" height="578"
+              alt="Фото макета Барбершоп Бородинский">
+            <p class="project-name">BARBERSHOP</p>
+            <p class="project-description">Сайт салона красоты. Для мужчин, да.</p>
+            <p class="buy">
+              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+            </p>
+          </li>
+
+          <li class="project-item">
+            <img class="pic" src="./img/mishka.png" width="358" height="578" alt="Фото макета Мишка">
+            <p class="project-name">MISHKA</p>
+            <p class="project-description">Интернет-магазин вязаных игрушек</p>
+            <p class="buy">
+              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+            </p>
+          </li>
+
+          <li class="project-item">
+            <img class="pic" src="./img/aplus.png" width="358" height="578" alt="Фото макета А Плюс">
+            <p class="project-name">A PLUS</p>
+            <p class="project-description">Лендинг курсов повышения квалификации</p>
+            <p class="buy">
+              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+            </p>
+          </li>
+
+          <li class="project-item">
+            <img class="pic" src="./img/kvast.png" width="358" height="578" alt="Фото макета Кваст">
+            <p class="project-name">КВАСТ</p>
+            <p class="project-description">Промо-сайт производителя крафтового кваса</p>
+            <p class="buy">
+              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+            </p>
+          </li>
+
+        </ul>
+
+      </section>
+
+      <section class="control">
+        <ul class="control-list">
+          <li class="control-item">
+            <a class="btn link">1</a>
+          </li>
+          <li class="control-item">
+            <a class="btn link" href="#">2</a>
+          </li>
+          <li class="control-item">
+            <a class="btn link" href="#">3</a>
+          </li>
+          <li class="control-item">
+            <a class="btn link" href="#">Следущая</a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
 
   <footer class="main-footer">
@@ -221,7 +228,8 @@
 
     <div class="container">
 
-      <section class="footer-social">
+      <div class="footer-social">
+
         <ul class="social-list">
           <li class="social-item">
             <a class="social-btn link" href="#">
@@ -239,13 +247,15 @@
             </a>
           </li>
         </ul>
-      </section>
 
-      <section class="footer-friendship">
-        <h2 class="footer-subtitel">Давайте дружить это выгодно!</h2>
-        <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
-      </section>
-      
+
+        <section class="footer-friendship">
+          <h2 class="footer-subtitel">Давайте дружить это выгодно!</h2>
+          <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+
+      </div>
+
     </div>
 
   </footer>

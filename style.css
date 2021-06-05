@@ -112,6 +112,7 @@
 
 .user-basket {
   text-align: right;
+  margin-top: 37px;
 }
 
 /* ВОЗМНОЖНО НУЖНО БУДЕТ УДАЛИТЬ */
@@ -126,6 +127,7 @@
   line-height: 30px;
   display: grid;
   grid-template-columns: 160px 1fr min-content;
+  margin-top: 38px;
 }
 
 .site-navigation {
@@ -138,6 +140,7 @@
   text-transform: uppercase;
   list-style: none;
   margin-left: 200px;
+  margin-top: 37px;
 }
 
 .site-navigation :hover,
@@ -174,7 +177,10 @@
   line-height: 55px;
   font-weight: 500;
   background-color: var(--basic-light-gray);
-  margin-bottom: 25px;
+}
+
+.score {
+  margin: 78px 356px 108px 357px;
 }
 
 .features {
@@ -227,7 +233,6 @@
 }
 
 .work-item {
-
 }
 
 .work-list {
@@ -320,7 +325,6 @@
 }
 
 .titel-box {
-
 }
 
 .principle {
@@ -446,7 +450,6 @@
 /* Main footer */
 
 .main-footer {
-
 }
 
 .form-text {
@@ -563,6 +566,22 @@
 }
 
 /* Catalog */
+.template-box {
+
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
+}
+
+.filter-box {
+
+}
+
+.sort-box {
+
+  display: grid;
+  grid-template-columns: ;
+}
 
 .filter {
   font-size: 18px;
@@ -600,11 +619,15 @@
 .grid-list {
   list-style: none;
   color: var(--basic-dark-blue);
+  margin: 0;
+  padding: 0;
 }
 
 .chips-list {
   list-style: none;
   color: var(--basic-dark-blue);
+  margin: 0;
+  padding: 0;
 }
 
 .grid-item {
@@ -688,8 +711,17 @@
   color: var(--basic-black);
 }
 
+/* Example */
+
+.examples-box {
+  /* display: grid; */
+}
+
 .project-list {
   list-style: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .project-name {
@@ -743,6 +775,9 @@
 
 .control-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: min-content min-content min-content 1fr;
+  column-gap: 11px;
 }
 
 .control-item .btn {
