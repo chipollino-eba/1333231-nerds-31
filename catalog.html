@@ -18,184 +18,188 @@
     <!-- <h2>Дизайн-студия Нёрдс</h2> -->
 
     <header class="main-header">
-
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img class="pic" src="./img/logo.svg" width="160" height="65" alt="Логотип компании">
         </a>
-        <div class="main-header-bar">
-          <ul class="site-navigation">
-            <li><a class="link link-nav" href="index.html">Студия</a></li>
-            <li><a class="link link-nav" href="blanc.html">Клиенты</a></li>
-            <li><a class="link link-nav" href="catalog.html">Магазин</a></li>
-            <li><a class="link link-nav" href="blanc.html">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="user-basket">
-          <a class="link basket" href="#">Корзина</a>
+        <div class="container">
+          <div class="main-header-bar">
+            <ul class="site-navigation">
+              <li><a class="link link-nav" href="index.html">Студия</a></li>
+              <li><a class="link link-nav" href="blanc.html">Клиенты</a></li>
+              <li><a class="link link-nav" href="catalog.html">Магазин</a></li>
+              <li><a class="link link-nav" href="blanc.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="user-basket">
+            <a class="link basket" href="#">Корзина</a>
+          </div>
         </div>
       </nav>
     </header>
+
     <h1 class="slogan score">Магазин готовых шаблонов</h1>
   </div>
 
   <main class="container template-box">
+    <div class="main-filter-box">
+      <section class="filter-box">
 
-    <section class="filter-box">
+        <h2 class="filter">Стоимость:</h2>
 
-      <h2 class="filter">Стоимость:</h2>
+        <form action="https://echo.htmlacademy.ru">
+          <div class="range"><input class="range" type="range" min="0" max="15000"></div>
+          <ul class="range-list">
+            <li class="range-price">от <span class="price">0</span></li>
+            <li class="range-price">до <span class="price">15 000</span></li>
+          </ul>
+        </form>
 
-      <form action="https://echo.htmlacademy.ru">
-        <div class="range"><input class="range" type="range" min="0" max="15000"></div>
-        <ul class="range-list">
-          <li class="range-price">от <span class="price">0</span></li>
-          <li class="range-price">до <span class="price">15 000</span></li>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+
+          <fieldset class="filter-grid">
+            <legend class="filter">Сетка:</legend>
+            <ul class="grid-list">
+              <li class="grid-item">
+                <input type="radio" name="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="grid-item">
+                <input type="radio" name="fixed" id="filter-fixed">
+                <label for="filter-fixed">Фиксированая</label>
+              </li>
+              <li class="grid-item">
+                <input type="radio" name="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filter-grid">
+            <legend class="filter">Особенности:</legend>
+            <ul class="chips-list">
+              <li class="chips-item">
+                <input type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="chips-item">
+                <input type="checkbox" name="advantages" id="filter-advantages">
+                <label for="filter-advantages">Блок преимуществ</label>
+              </li>
+              <li class="chips-item">
+                <input type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="chips-item">
+                <input type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="chips-item">
+                <input type="checkbox" name="basket" id="filter-basket">
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+            <button class="show" type="submit">Показать</button>
+          </fieldset>
+
+        </form>
+
+      </section>
+
+      <div class="sort-box">
+        <h2 class="filter">Сортировать:</h2>
+        <ul class="filter-list">
+          <li class="filter-item"><button class="btn-sort btn-price" type="button" disabled>По цене</button></li>
+          <li class="filter-item"><button class="btn-sort btn-type" type="button">По типу</button></li>
+          <li class="filter-item"><button class="btn-sort btn-name" type="button">По названию</button></li>
+          <li class="filter-item"><button class="btn-up" type="button"></button></li>
+          <li class="filter-item"><button class="btn-down" type="button"></button></li>
         </ul>
-      </form>
+      </div>
+    </div>
 
-      <form action="https://echo.htmlacademy.ru" method="GET">
 
-        <fieldset class="filter-grid">
-          <legend class="filter">Сетка:</legend>
-          <ul class="grid-list">
-            <li class="grid-item">
-              <input type="radio" name="adaptive" id="filter-adaptive" checked>
-              <label for="filter-adaptive">Адаптивная</label>
-            </li>
-            <li class="grid-item">
-              <input type="radio" name="fixed" id="filter-fixed">
-              <label for="filter-fixed">Фиксированая</label>
-            </li>
-            <li class="grid-item">
-              <input type="radio" name="rubber" id="filter-rubber">
-              <label for="filter-rubber">Резиновая</label>
-            </li>
-          </ul>
-        </fieldset>
+    <section class="examples-box">
 
-        <fieldset class="filter-grid">
-          <legend class="filter">Особенности:</legend>
-          <ul class="chips-list">
-            <li class="chips-item">
-              <input type="checkbox" name="slider" id="filter-slider" checked>
-              <label for="filter-slider">Слайдер</label>
-            </li>
-            <li class="chips-item">
-              <input type="checkbox" name="advantages" id="filter-advantages">
-              <label for="filter-advantages">Блок преимуществ</label>
-            </li>
-            <li class="chips-item">
-              <input type="checkbox" name="news" id="filter-news" checked>
-              <label for="filter-news">Новости</label>
-            </li>
-            <li class="chips-item">
-              <input type="checkbox" name="gallery" id="filter-gallery">
-              <label for="filter-gallery">Галерея</label>
-            </li>
-            <li class="chips-item">
-              <input type="checkbox" name="basket" id="filter-basket">
-              <label for="filter-basket">Корзина</label>
-            </li>
-          </ul>
-          <button class="show" type="submit">Показать</button>
-        </fieldset>
+      <!-- <h2>Примеры шаблонов</h2> -->
 
-      </form>
+      <ul class="project-list">
+
+        <li class="project-item">
+          <img class="pic" src="./img/sedona.png" width="358" height="578" alt="Фото макета Седона">
+          <p class="project-name">SEDONA</p>
+          <p class="project-description">Информационный сайт для туристов</p>
+          <p class="buy">
+            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+          </p>
+        </li>
+
+        <li class="project-item">
+          <img class="pic" src="./img/pink.png" width="358" height="578" alt="Фото макета Пинк Апп">
+          <p class="project-name">PINK APP</p>
+          <p class="project-description">Продуктовый лендингприложения для iOS и Android</p>
+          <p class="buy">
+            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+          </p>
+        </li>
+
+        <li class="project-item">
+          <img class="pic" src="./img/borodinsky.png" width="358" height="578" alt="Фото макета Барбершоп Бородинский">
+          <p class="project-name">BARBERSHOP</p>
+          <p class="project-description">Сайт салона красоты. Для мужчин, да.</p>
+          <p class="buy">
+            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+          </p>
+        </li>
+
+        <li class="project-item">
+          <img class="pic" src="./img/mishka.png" width="358" height="578" alt="Фото макета Мишка">
+          <p class="project-name">MISHKA</p>
+          <p class="project-description">Интернет-магазин вязаных игрушек</p>
+          <p class="buy">
+            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+          </p>
+        </li>
+
+        <li class="project-item">
+          <img class="pic" src="./img/aplus.png" width="358" height="578" alt="Фото макета А Плюс">
+          <p class="project-name">A PLUS</p>
+          <p class="project-description">Лендинг курсов повышения квалификации</p>
+          <p class="buy">
+            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+          </p>
+        </li>
+
+        <li class="project-item">
+          <img class="pic" src="./img/kvast.png" width="358" height="578" alt="Фото макета Кваст">
+          <p class="project-name">КВАСТ</p>
+          <p class="project-description">Промо-сайт производителя крафтового кваса</p>
+          <p class="buy">
+            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+          </p>
+        </li>
+
+      </ul>
 
     </section>
 
-    <div class="sort-box">
-      <h2 class="filter">Сортировать:</h2>
-      <ul class="filter-list">
-        <li class="filter-item"><button class="btn-sort btn-price" type="button" disabled>По цене</button></li>
-        <li class="filter-item"><button class="btn-sort btn-type" type="button">По типу</button></li>
-        <li class="filter-item"><button class="btn-sort btn-name" type="button">По названию</button></li>
-        <li class="filter-item"><button class="btn-up" type="button"></button></li>
-        <li class="filter-item"><button class="btn-down" type="button"></button></li>
+    <section class="control">
+      <ul class="control-list">
+        <li class="control-item">
+          <a class="btn link">1</a>
+        </li>
+        <li class="control-item">
+          <a class="btn link" href="#">2</a>
+        </li>
+        <li class="control-item">
+          <a class="btn link" href="#">3</a>
+        </li>
+        <li class="control-item">
+          <a class="btn link" href="#">Следущая</a>
+        </li>
       </ul>
+    </section>
 
-      <section class="examples-box">
-
-        <!-- <h2>Примеры шаблонов</h2> -->
-
-        <ul class="project-list">
-
-          <li class="project-item">
-            <img class="pic" src="./img/sedona.png" width="358" height="578" alt="Фото макета Седона">
-            <p class="project-name">SEDONA</p>
-            <p class="project-description">Информационный сайт для туристов</p>
-            <p class="buy">
-              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-            </p>
-          </li>
-
-          <li class="project-item">
-            <img class="pic" src="./img/pink.png" width="358" height="578" alt="Фото макета Пинк Апп">
-            <p class="project-name">PINK APP</p>
-            <p class="project-description">Продуктовый лендингприложения для iOS и Android</p>
-            <p class="buy">
-              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-            </p>
-          </li>
-
-          <li class="project-item">
-            <img class="pic" src="./img/borodinsky.png" width="358" height="578"
-              alt="Фото макета Барбершоп Бородинский">
-            <p class="project-name">BARBERSHOP</p>
-            <p class="project-description">Сайт салона красоты. Для мужчин, да.</p>
-            <p class="buy">
-              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-            </p>
-          </li>
-
-          <li class="project-item">
-            <img class="pic" src="./img/mishka.png" width="358" height="578" alt="Фото макета Мишка">
-            <p class="project-name">MISHKA</p>
-            <p class="project-description">Интернет-магазин вязаных игрушек</p>
-            <p class="buy">
-              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-            </p>
-          </li>
-
-          <li class="project-item">
-            <img class="pic" src="./img/aplus.png" width="358" height="578" alt="Фото макета А Плюс">
-            <p class="project-name">A PLUS</p>
-            <p class="project-description">Лендинг курсов повышения квалификации</p>
-            <p class="buy">
-              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-            </p>
-          </li>
-
-          <li class="project-item">
-            <img class="pic" src="./img/kvast.png" width="358" height="578" alt="Фото макета Кваст">
-            <p class="project-name">КВАСТ</p>
-            <p class="project-description">Промо-сайт производителя крафтового кваса</p>
-            <p class="buy">
-              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-            </p>
-          </li>
-
-        </ul>
-
-      </section>
-
-      <section class="control">
-        <ul class="control-list">
-          <li class="control-item">
-            <a class="btn link">1</a>
-          </li>
-          <li class="control-item">
-            <a class="btn link" href="#">2</a>
-          </li>
-          <li class="control-item">
-            <a class="btn link" href="#">3</a>
-          </li>
-          <li class="control-item">
-            <a class="btn link" href="#">Следущая</a>
-          </li>
-        </ul>
-      </section>
-    </div>
   </main>
 
   <footer class="main-footer">
