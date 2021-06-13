@@ -87,6 +87,9 @@
 
 .main-header {
   /* display: grid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
@@ -124,19 +127,26 @@
 } */
 
 .main-navigation {
+  display: flex;
+  flex-direction: row;
   line-height: 30px;
   /* display: grid;
   grid-template-columns: 160px 1fr min-content; */
   margin-top: 38px;
+  width: 100%;
+}
+
+.main-navigation .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-navigation {
   /* display: grid;
   grid-template-columns: min-content min-content min-content min-content; */
-  column-gap: 45px;
+  /* column-gap: 45px; */
   margin: 0;
   padding: 0;
-  /* width: 460px; */
   text-transform: uppercase;
   list-style: none;
   margin-left: 200px;
@@ -169,6 +179,8 @@
 /* Features */
 
 .features-box {
+  display: flex;
+  flex-direction: column;
 }
 
 .slogan {
@@ -184,6 +196,7 @@
 }
 
 .features {
+  display: flex;
   /* display: grid;
   grid-template-columns: 1fr 760px; */
 }
@@ -236,6 +249,8 @@
 }
 
 .work-list {
+  display: flex;
+  justify-content: space-between;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr; */
   /* column-gap: 100px; */
@@ -316,6 +331,9 @@
 /* Main desc */
 
 .main-desc {
+  display: flex;
+  flex-direction: row;
+
   /* display: grid;
   grid-template-columns: 1fr 350px;
   column-gap: 149px; */
@@ -325,6 +343,8 @@
 }
 
 .titel-box {
+  display: flex;
+  flex-direction: column;
 }
 
 .principle {
@@ -366,6 +386,7 @@
 }
 
 .indicators-list {
+  display: flex;
   /* display: grid;
   grid-template-columns: 119px 125px 136px; */
   list-style: none;
@@ -383,10 +404,6 @@
   grid-template-columns: 1fr 1fr 1fr; */
 }
 
-.lol {
-  margin-bottom: 37px;
-}
-
 .percent {
   /* display: grid;
   grid-template-columns: 1fr 1fr; */
@@ -395,6 +412,8 @@
 /* Partners */
 
 .partners-list {
+  display: flex;
+  justify-content: space-around;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; */
   list-style: none;
@@ -542,12 +561,15 @@
 /* Footer social */
 
 .footer-social {
+  display: flex;
+  justify-content: space-around;
   /* display: grid;
   grid-template-columns: 261px 1fr;
   column-gap: 139px; */
 }
 
 .social-list {
+  display: flex;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr; */
   list-style: none;
@@ -567,18 +589,16 @@
 
 /* Catalog */
 .template-box {
-
   /* display: grid;
   grid-template-columns: 260px 1fr; */
   align-content: start;
 }
 
 .filter-box {
-
 }
 
 .sort-box {
-/* 
+  /*
   display: grid;
   grid-template-columns: ; */
 }
