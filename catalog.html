@@ -12,114 +12,128 @@
   <link href="normalize.css" rel="stylesheet">
 </head>
 
-<body class="page-body container">
+<body class="page-body">
 
   <div class="wrapper">
-    <!-- <h2>Дизайн-студия Нёрдс</h2> -->
 
-    <header class="main-header">
+    <h2 class="visually-hidden">Дизайн-студия Нёрдс</h2>
+
+    <header class="main-header container">
+
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img class="pic" src="./img/logo.svg" width="160" height="65" alt="Логотип компании">
+          <img class="pic-logo" src="./img/logo.svg" width="160" height="65" alt="Логотип компании">
         </a>
-        <div class="container">
-          <div class="main-header-bar">
-            <ul class="site-navigation">
-              <li><a class="link link-nav" href="index.html">Студия</a></li>
-              <li><a class="link link-nav" href="blanc.html">Клиенты</a></li>
-              <li><a class="link link-nav" href="catalog.html">Магазин</a></li>
-              <li><a class="link link-nav" href="blanc.html">Контакты</a></li>
-            </ul>
-          </div>
-          <div class="user-basket">
-            <a class="link basket" href="#">Корзина</a>
-          </div>
-        </div>
+        <ul class="site-navigation">
+          <li><a class="link link-nav" href="index.html">Студия</a></li>
+          <li><a class="link link-nav" href="blanc.html">Клиенты</a></li>
+          <li><a class="link link-nav" href="catalog.html">Магазин</a></li>
+          <li><a class="link link-nav" href="blanc.html">Контакты</a></li>
+        </ul>
       </nav>
+      <div class="user-basket">
+        <a class="link basket" href="#">Корзина</a>
+      </div>
     </header>
 
     <h1 class="slogan score">Магазин готовых шаблонов</h1>
+
   </div>
 
   <main class="container template-box">
-    <div class="main-filter-box">
-      <section class="filter-box">
 
-        <h2 class="filter">Стоимость:</h2>
+    <!-- <div class="main-filter-box"> -->
 
-        <form action="https://echo.htmlacademy.ru">
-          <div class="range"><input class="range" type="range" min="0" max="15000"></div>
-          <ul class="range-list">
-            <li class="range-price">от <span class="price">0</span></li>
-            <li class="range-price">до <span class="price">15 000</span></li>
+    <section class="filter-box">
+
+      <!-- <div class="sort"> -->
+
+      <h2 class="filter">Стоимость:</h2>
+
+      <form action="https://echo.htmlacademy.ru">
+        <div class="range"><input class="range" type="range" min="0" max="15000"></div>
+        <ul class="range-list">
+          <li class="range-price">от <span class="price">0</span></li>
+          <li class="range-price">до <span class="price">15 000</span></li>
+        </ul>
+      </form>
+
+      <form action="https://echo.htmlacademy.ru" method="GET">
+
+        <fieldset class="filter-grid">
+          <legend class="filter">Сетка:</legend>
+          <ul class="grid-list">
+            <li class="grid-item">
+              <input type="radio" name="adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="grid-item">
+              <input type="radio" name="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированая</label>
+            </li>
+            <li class="grid-item">
+              <input type="radio" name="rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
           </ul>
-        </form>
+        </fieldset>
 
-        <form action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset class="filter-grid">
+          <legend class="filter">Особенности:</legend>
+          <ul class="chips-list">
+            <li class="chips-item">
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li class="chips-item">
+              <input type="checkbox" name="advantages" id="filter-advantages">
+              <label for="filter-advantages">Блок преимуществ</label>
+            </li>
+            <li class="chips-item">
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li class="chips-item">
+              <input type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li class="chips-item">
+              <input type="checkbox" name="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+          <button class="show" type="submit">Показать</button>
+        </fieldset>
 
-          <fieldset class="filter-grid">
-            <legend class="filter">Сетка:</legend>
-            <ul class="grid-list">
-              <li class="grid-item">
-                <input type="radio" name="adaptive" id="filter-adaptive" checked>
-                <label for="filter-adaptive">Адаптивная</label>
-              </li>
-              <li class="grid-item">
-                <input type="radio" name="fixed" id="filter-fixed">
-                <label for="filter-fixed">Фиксированая</label>
-              </li>
-              <li class="grid-item">
-                <input type="radio" name="rubber" id="filter-rubber">
-                <label for="filter-rubber">Резиновая</label>
-              </li>
-            </ul>
-          </fieldset>
+      </form>
 
-          <fieldset class="filter-grid">
-            <legend class="filter">Особенности:</legend>
-            <ul class="chips-list">
-              <li class="chips-item">
-                <input type="checkbox" name="slider" id="filter-slider" checked>
-                <label for="filter-slider">Слайдер</label>
-              </li>
-              <li class="chips-item">
-                <input type="checkbox" name="advantages" id="filter-advantages">
-                <label for="filter-advantages">Блок преимуществ</label>
-              </li>
-              <li class="chips-item">
-                <input type="checkbox" name="news" id="filter-news" checked>
-                <label for="filter-news">Новости</label>
-              </li>
-              <li class="chips-item">
-                <input type="checkbox" name="gallery" id="filter-gallery">
-                <label for="filter-gallery">Галерея</label>
-              </li>
-              <li class="chips-item">
-                <input type="checkbox" name="basket" id="filter-basket">
-                <label for="filter-basket">Корзина</label>
-              </li>
-            </ul>
-            <button class="show" type="submit">Показать</button>
-          </fieldset>
+      <!-- </div> -->
 
-        </form>
+    </section>
 
-      </section>
+
+
+    </div>
+
+
+    <section class="examples-box">
 
       <div class="sort-box">
-        <h2 class="filter">Сортировать:</h2>
+
+
+
         <ul class="filter-list">
+          <li>
+            <h2 class="filter">Сортировать:</h2>
+          </li>
           <li class="filter-item"><button class="btn-sort btn-price" type="button" disabled>По цене</button></li>
           <li class="filter-item"><button class="btn-sort btn-type" type="button">По типу</button></li>
           <li class="filter-item"><button class="btn-sort btn-name" type="button">По названию</button></li>
           <li class="filter-item"><button class="btn-up" type="button"></button></li>
           <li class="filter-item"><button class="btn-down" type="button"></button></li>
         </ul>
+
       </div>
-    </div>
-
-
-    <section class="examples-box">
 
       <!-- <h2>Примеры шаблонов</h2> -->
 
@@ -137,7 +151,7 @@
         <li class="project-item">
           <img class="pic" src="./img/pink.png" width="358" height="578" alt="Фото макета Пинк Апп">
           <p class="project-name">PINK APP</p>
-          <p class="project-description">Продуктовый лендингприложения для iOS и Android</p>
+          <p class="project-description">Продуктовый лендингприложения для iOS<br> и Android</p>
           <p class="buy">
             <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
           </p>
@@ -181,52 +195,85 @@
 
       </ul>
 
+      <section class="control">
+
+        <ul class="control-list">
+          <li class="control-item">
+            <a class="btn link">1</a>
+          </li>
+          <li class="control-item">
+            <a class="btn link" href="#">2</a>
+          </li>
+          <li class="control-item">
+            <a class="btn link" href="#">3</a>
+          </li>
+          <li class="control-item">
+            <a class="btn link" href="#">Следущая</a>
+          </li>
+        </ul>
+
+      </section>
+
     </section>
 
-    <section class="control">
-      <ul class="control-list">
-        <li class="control-item">
-          <a class="btn link">1</a>
-        </li>
-        <li class="control-item">
-          <a class="btn link" href="#">2</a>
-        </li>
-        <li class="control-item">
-          <a class="btn link" href="#">3</a>
-        </li>
-        <li class="control-item">
-          <a class="btn link" href="#">Следущая</a>
-        </li>
-      </ul>
-    </section>
+
 
   </main>
 
   <footer class="main-footer">
 
+    <img class="pic" src="./img/map.png" width="1440" height="416" alt="Карта местонахождения студии">
+
     <section class="form">
-      <img class="pic" src="./img/map.png" width="1440" height="416" alt="Карта местонахождения студии">
       <p class="form-text">NЁRDS DESIGN STUDIO</p>
-      <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+      <p class="address">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
       <a class="contacts-phone link" href="tel:+78005558628">+7 800 555-86-28</a>
-      <a class="btn link" href="#">Напишите нам</a>
+      <a class="btn link" href="#"><span class="more">Напишите нам</span></a>
     </section>
 
-    <form class="popup" action="https://echo.htmlacademy.ru" method="POST">
+    <form class="popup visually-hidden" action="https://echo.htmlacademy.ru" method="POST">
       <h2 class="popup-title">Напишите нам</h2>
-      <p>
-        <label class="popup-item" for="appointment-name">Ваше имя:</label>
-        <input class="popup-text" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label class="popup-item" for="login-login">Ваш email:</label>
-        <input class="popup-text" id="login-login" type="email" name="login" placeholder="email@example.com">
-      </p>
-      <p>
-        <label class="popup-item" for="appointment-text">Текс письма:</label>
-        <input class="popup-text" id="appointment-text" type="text" name="text" placeholder="В свободной форме">
-      </p>
-      <button class="btn send" type="submit">Отправить</button>
+
+      <ul class="popup-list">
+
+        <div class="main-part">
+
+          <div class="">
+            <li class="popup-item">
+              <label class="popup-items" for="appointment-name">Ваше имя:</label>
+            </li>
+
+            <li class="popup-item">
+              <input class="popup-text" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+            </li>
+          </div>
+
+          <div class="">
+            <li class="popup-item">
+              <label class="popup-items" for="login-login">Ваш email:</label>
+            </li>
+
+            <li class="popup-item">
+              <input class="popup-text" id="login-login" type="email" name="login" placeholder="email@example.com">
+            </li>
+          </div>
+
+        </div>
+
+        <div class="">
+          <li class="popup-item letter">
+            <label class="popup-items" for="appointment-text">Текс письма:</label>
+          </li>
+
+          <li class="popup-item">
+            <input class="popup-text mail" id="appointment-text" type="text" name="text"
+              placeholder="В свободной форме">
+          </li>
+        </div>
+      </ul>
+      <button class="btn send" type="submit">
+        <sapn class="more">Отправить</sapn>
+      </button>
       <button class="btn-closed" type="button">Закрыть</button>
     </form>
 
@@ -237,17 +284,17 @@
         <ul class="social-list">
           <li class="social-item">
             <a class="social-btn link" href="#">
-              <img class="pic" src="./img/logovk.svg" width="81" height="81" alt="Логотип ВКонтакте">
+              <img class="social btn" src="./img/logovk.svg" alt="Логотип ВКонтакте">
             </a>
           </li>
           <li class="social-item">
             <a class="social-btn link" href="#">
-              <img class="pic" src="./img/logofacebook.svg" width="81" height="81" alt="Логотип Фэйсбука">
+              <img class="social btn" src="./img/logofb.svg" alt="Логотип Фэйсбука">
             </a>
           </li>
           <li class="social-item">
             <a class="social-btn link" href="#">
-              <img class="pic" src="./img/logoinst.svg" width="81" height="81" alt="Логотип Инстаграма">
+              <div class="more"><img class="social btn" src="./img/logoinst.svg" alt="Логотип Инстаграма"></div>
             </a>
           </li>
         </ul>
