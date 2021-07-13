@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
   <link rel="icon" href="./img/favicon/favicon.ico">
-  <link rel="icon" href="./img/favicon/icon.svg type=" image/svg+xml">
+  <link rel="icon" href="./img/favicon/icon.svg">
   <link rel="apple-touch-icon" href="./img/favicon/180.png">
   <link href="manifest.webmanifest" rel="manifest">
   <link href="style.css" rel="stylesheet">
@@ -24,16 +24,20 @@
         <a class="main-header-logo" href="index.html">
           <img class="pic-logo" src="./img/logo.svg" width="160" height="65" alt="Логотип компании">
         </a>
+
         <ul class="site-navigation">
           <li><a class="link link-nav" href="index.html">Студия</a></li>
           <li><a class="link link-nav" href="blanc.html">Клиенты</a></li>
           <li><a class="link link-nav" href="catalog.html">Магазин</a></li>
           <li><a class="link link-nav" href="blanc.html">Контакты</a></li>
         </ul>
+
       </nav>
+
       <div class="user-basket">
         <a class="link basket" href="#">Корзина</a>
       </div>
+
     </header>
 
     <h1 class="slogan score">Магазин готовых шаблонов</h1>
@@ -42,8 +46,6 @@
 
   <main class="container template-box">
 
-    <!-- <div class="main-filter-box"> -->
-
     <section class="filter-box">
 
       <div>
@@ -51,68 +53,92 @@
         <h2 class="filter">Стоимость:</h2>
 
         <form action="https://echo.htmlacademy.ru">
+
           <div class="range"><input class="range" type="range" min="0" max="15000"></div>
+
           <ul class="range-list">
             <li class="range-price">от <span class="price">0</span></li>
             <li class="range-price">до <span class="price">15 000</span></li>
           </ul>
+
         </form>
 
         <form action="https://echo.htmlacademy.ru" method="GET">
 
           <fieldset class="filter-grid">
+
             <legend class="filter">Сетка:</legend>
+
             <ul class="grid-list">
+
               <li class="grid-item">
                 <input type="radio" name="adaptive" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
+
               <li class="grid-item">
                 <input type="radio" name="fixed" id="filter-fixed">
                 <label for="filter-fixed">Фиксированая</label>
               </li>
+
               <li class="grid-item">
                 <input type="radio" name="rubber" id="filter-rubber">
                 <label for="filter-rubber">Резиновая</label>
               </li>
+
             </ul>
+
           </fieldset>
 
           <fieldset class="filter-grid">
+
             <legend class="filter">Особенности:</legend>
+
             <ul class="chips-list">
+
               <li class="chips-item">
                 <input type="checkbox" name="slider" id="filter-slider" checked>
                 <label for="filter-slider">Слайдер</label>
               </li>
+
               <li class="chips-item">
                 <input type="checkbox" name="advantages" id="filter-advantages">
                 <label for="filter-advantages">Блок преимуществ</label>
               </li>
+
               <li class="chips-item">
                 <input type="checkbox" name="news" id="filter-news" checked>
                 <label for="filter-news">Новости</label>
               </li>
+
               <li class="chips-item">
                 <input type="checkbox" name="gallery" id="filter-gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
+
               <li class="chips-item">
                 <input type="checkbox" name="basket" id="filter-basket">
                 <label for="filter-basket">Корзина</label>
               </li>
+
             </ul>
+
             <button class="show" type="submit">Показать</button>
+
           </fieldset>
 
         </form>
+
       </div>
+
     </section>
 
     <section class="examples-box">
 
       <div class="sort-box">
+
         <h2 class="filter">Сортировать:</h2>
+
         <ul class="filter-list">
           <li class="filter-item"><button class="btn-sort btn-price" type="button" disabled>По цене</button></li>
           <li class="filter-item"><button class="btn-sort btn-type" type="button">По типу</button></li>
@@ -120,9 +146,11 @@
           <li class="filter-item"><button class="btn-up" type="button"></button></li>
           <li class="filter-item"><button class="btn-down" type="button"></button></li>
         </ul>
+
       </div>
 
       <ul class="project-list">
+
         <li class="project-item">
           <img class="pic" src="./img/sedona.png" width="358" height="578" alt="Фото макета Седона">
           <p class="project-name">SEDONA</p>
@@ -131,6 +159,7 @@
             <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
           </p>
         </li>
+
         <li class="project-item">
           <img class="pic" src="./img/pink.png" width="358" height="578" alt="Фото макета Пинк Апп">
           <p class="project-name">PINK APP</p>
@@ -139,6 +168,7 @@
             <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
           </p>
         </li>
+
         <li class="project-item">
           <img class="pic" src="./img/borodinsky.png" width="358" height="578" alt="Фото макета Барбершоп Бородинский">
           <p class="project-name">BARBERSHOP</p>
@@ -147,6 +177,7 @@
             <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
           </p>
         </li>
+
         <li class="project-item">
           <img class="pic" src="./img/mishka.png" width="358" height="578" alt="Фото макета Мишка">
           <p class="project-name">MISHKA</p>
@@ -155,6 +186,7 @@
             <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
           </p>
         </li>
+
         <li class="project-item">
           <img class="pic" src="./img/aplus.png" width="358" height="578" alt="Фото макета А Плюс">
           <p class="project-name">A PLUS</p>
@@ -163,6 +195,7 @@
             <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
           </p>
         </li>
+
         <li class="project-item">
           <img class="pic" src="./img/kvast.png" width="358" height="578" alt="Фото макета Кваст">
           <p class="project-name">КВАСТ</p>
@@ -171,30 +204,34 @@
             <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
           </p>
         </li>
+
       </ul>
 
       <section class="control">
 
         <ul class="control-list">
+
           <li class="control-item">
             <a class="btn link">1</a>
           </li>
+
           <li class="control-item">
             <a class="btn link" href="#">2</a>
           </li>
+
           <li class="control-item">
             <a class="btn link" href="#">3</a>
           </li>
+
           <li class="control-item">
             <a class="btn link" href="#">Следущая</a>
           </li>
+
         </ul>
 
       </section>
 
     </section>
-
-
 
   </main>
 
@@ -210,35 +247,29 @@
     </section>
 
     <form class="popup visually-hidden" action="https://echo.htmlacademy.ru" method="POST">
+
       <h2 class="popup-title">Напишите нам</h2>
 
-      <ul class="popup-list">
+      <div class="main-part">
 
-        <div class="main-part">
+        <ul class="popup-list">
 
-          <div class="">
-            <li class="popup-item">
-              <label class="popup-items" for="appointment-name">Ваше имя:</label>
-            </li>
+          <li class="popup-item">
+            <label class="popup-items" for="appointment-name">Ваше имя:</label>
+          </li>
 
-            <li class="popup-item">
-              <input class="popup-text" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-            </li>
-          </div>
+          <li class="popup-item">
+            <input class="popup-text" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+          </li>
 
-          <div class="">
-            <li class="popup-item">
-              <label class="popup-items" for="login-login">Ваш email:</label>
-            </li>
+          <li class="popup-item">
+            <label class="popup-items" for="login-login">Ваш email:</label>
+          </li>
 
-            <li class="popup-item">
-              <input class="popup-text" id="login-login" type="email" name="login" placeholder="email@example.com">
-            </li>
-          </div>
+          <li class="popup-item">
+            <input class="popup-text" id="login-login" type="email" name="login" placeholder="email@example.com">
+          </li>
 
-        </div>
-
-        <div class="">
           <li class="popup-item letter">
             <label class="popup-items" for="appointment-text">Текс письма:</label>
           </li>
@@ -247,12 +278,14 @@
             <input class="popup-text mail" id="appointment-text" type="text" name="text"
               placeholder="В свободной форме">
           </li>
-        </div>
-      </ul>
-      <button class="btn send" type="submit">
-        <sapn class="more">Отправить</sapn>
-      </button>
+
+        </ul>
+
+      </div>
+
+      <button class="btn send more" type="submit">Отправить</button>
       <button class="btn-closed" type="button">Закрыть</button>
+
     </form>
 
     <div class="container">
@@ -260,21 +293,25 @@
       <div class="footer-social">
 
         <ul class="social-list">
+
           <li class="social-item">
             <a class="social-btn link" href="#">
               <img class="social btn" src="./img/logovk.svg" alt="Логотип ВКонтакте">
             </a>
           </li>
+
           <li class="social-item">
             <a class="social-btn link" href="#">
               <img class="social btn" src="./img/logofb.svg" alt="Логотип Фэйсбука">
             </a>
           </li>
+
           <li class="social-item">
             <a class="social-btn link" href="#">
               <div class="more"><img class="social btn" src="./img/logoinst.svg" alt="Логотип Инстаграма"></div>
             </a>
           </li>
+          
         </ul>
 
 

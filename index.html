@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
   <link rel="icon" href="./img/favicon/favicon.ico">
-  <link rel="icon" href="./img/favicon/icon.svg type=" image/svg+xml">
+  <link rel="icon" href="./img/favicon/icon.svg">
   <link rel="apple-touch-icon" href="./img/favicon/180.png">
   <link href="manifest.webmanifest" rel="manifest">
   <link href="style.css" rel="stylesheet">
@@ -39,7 +39,7 @@
     <section class="features container">
       <div class="features-box">
         <h2 class="slogan">
-          <nobr>Долго, дорого,<br> скрупулезно.</nobr>
+          Долго, дорого,<br> скрупулезно.
         </h2>
         <p class="features-item">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
         <a class="btn link" href="#"><span class="more">Узнать больше</span></a>
@@ -48,9 +48,9 @@
             alt="Изображение трёх смартфонов">
         </div>
       </div>
-      <div class="features-box">
+      <div class="features-box visually-hidden">
         <h2 class="slogan love">
-          <nobr>Любим математику<br> как никто другой</nobr>
+          Любим математику<br> как никто другой
         </h2>
         <p class="features-item">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций
         </p>
@@ -60,9 +60,9 @@
             alt="Изображение трёх смартфонов">
         </div>
       </div>
-      <div class="features-box">
+      <div class="features-box visually-hidden">
         <h2 class="slogan">
-          <nobr>Только ночь,<br> только хардкор</nobr>
+          Только ночь,<br> только хардкор
         </h2>
         <p class="features-item">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.
         </p>
@@ -145,7 +145,7 @@
       <ul class="partners-list">
         <li class="patners-item partners1">
           <a href="https://htmlacademy.ru/">
-            <img class="pic" src="./img/logo_htmlacademy.png" width="199" height="57.16" alt="Логотип HTML Academy">
+            <img class="pic" src="./img/logo_htmlacademy.png" width="199" height="57" alt="Логотип HTML Academy">
           </a>
           <div class="line-vertical"></div>
         </li>
@@ -187,48 +187,45 @@
     </section>
 
     <form class="popup" action="https://echo.htmlacademy.ru" method="POST">
+
       <h2 class="popup-title">Напишите нам</h2>
 
-      <ul class="popup-list">
+      <div class="main-part">
 
-        <div class="main-part">
+        <ul class="popup-list">
 
-          <div class="">
-            <li class="popup-item">
-              <label class="popup-items" for="appointment-name">Ваше имя:</label>
-            </li>
+          <li class="popup-item">
+            <label class="popup-items" for="appointment-name">Ваше имя:</label>
+          </li>
 
-            <li class="popup-item">
-              <input class="popup-text" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-            </li>
-          </div>
+          <li class="popup-item">
+            <input class="popup-text" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+          </li>
 
-          <div class="">
-            <li class="popup-item">
-              <label class="popup-items" for="login-login">Ваш email:</label>
-            </li>
+          <li class="popup-item">
+            <label class="popup-items" for="login-login">Ваш email:</label>
+          </li>
 
-            <li class="popup-item">
-              <input class="popup-text" id="login-login" type="email" name="login" placeholder="email@example.com">
-            </li>
-          </div>
+          <li class="popup-item">
+            <input class="popup-text" id="login-login" type="email" name="login" placeholder="email@example.com">
+          </li>
 
-        </div>
-
-        <div class="">
           <li class="popup-item letter">
             <label class="popup-items" for="appointment-text">Текс письма:</label>
           </li>
 
           <li class="popup-item">
-            <input class="popup-text mail" id="appointment-text" type="text" name="text" placeholder="В свободной форме">
+            <input class="popup-text mail" id="appointment-text" type="text" name="text"
+              placeholder="В свободной форме">
           </li>
-        </div>
-      </ul>
-      <button class="btn send" type="submit">
-        <sapn class="more">Отправить</sapn>
-      </button>
+
+        </ul>
+
+      </div>
+
+      <button class="btn send more" type="submit">Отправить</button>
       <button class="btn-closed" type="button">Закрыть</button>
+
     </form>
 
     <div class="container">
@@ -236,23 +233,26 @@
       <div class="footer-social">
 
         <ul class="social-list">
+
           <li class="social-item">
             <a class="social-btn link" href="#">
               <img class="social btn" src="./img/logovk.svg" alt="Логотип ВКонтакте">
             </a>
           </li>
+
           <li class="social-item">
             <a class="social-btn link" href="#">
               <img class="social btn" src="./img/logofb.svg" alt="Логотип Фэйсбука">
             </a>
           </li>
+
           <li class="social-item">
             <a class="social-btn link" href="#">
               <div class="more"><img class="social btn" src="./img/logoinst.svg" alt="Логотип Инстаграма"></div>
             </a>
           </li>
-        </ul>
 
+        </ul>
 
         <section class="footer-friendship">
           <h2 class="footer-subtitel">Давайте дружить это выгодно!</h2>
