@@ -8,8 +8,9 @@
   <link rel="icon" href="./img/favicon/icon.svg">
   <link rel="apple-touch-icon" href="./img/favicon/180.png">
   <link href="manifest.webmanifest" rel="manifest">
-  <link href="style.css" rel="stylesheet">
-  <link href="normalize.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700;display=swap" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -27,9 +28,9 @@
 
         <ul class="site-navigation">
           <li><a class="link link-nav" href="index.html">Студия</a></li>
-          <li><a class="link link-nav" href="blanc.html">Клиенты</a></li>
+          <li><a class="link link-nav" href="#">Клиенты</a></li>
           <li><a class="link link-nav" href="catalog.html">Магазин</a></li>
-          <li><a class="link link-nav" href="blanc.html">Контакты</a></li>
+          <li><a class="link link-nav" href="#">Контакты</a></li>
         </ul>
 
       </nav>
@@ -45,45 +46,56 @@
   </div>
 
   <main class="container template-box">
-
     <section class="filter-box">
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="filter-item">
 
-      <div>
+          <legend class="filters">Стоимость:</legend>
 
-        <h2 class="filter">Стоимость:</h2>
+          <div class="range-filter">
 
-        <form action="https://echo.htmlacademy.ru">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="width: 30%; margin-left: 20%"></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+              <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+            </div>
 
-          <div class="range"><input class="range" type="range" min="0" max="15000"></div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="number" name="max-price" value="15000">
+              </label>
+            </div>
 
-          <ul class="range-list">
-            <li class="range-price">от <span class="price">0</span></li>
-            <li class="range-price">до <span class="price">15 000</span></li>
-          </ul>
+          </div>
 
-        </form>
+        </fieldset>
 
         <form action="https://echo.htmlacademy.ru" method="GET">
 
           <fieldset class="filter-grid">
 
-            <legend class="filter">Сетка:</legend>
+            <legend class="filters">Сетка:</legend>
 
             <ul class="grid-list">
 
               <li class="grid-item">
-                <input type="radio" name="adaptive" id="filter-adaptive" checked>
-                <label for="filter-adaptive">Адаптивная</label>
+                <input class="radio-input" type="radio" name="adaptive" id="filter-adaptive" checked>
+                <span class="radio-box"></span>
+                <label class="rad" for="filter-adaptive">Адаптивная</label>
               </li>
 
               <li class="grid-item">
-                <input type="radio" name="fixed" id="filter-fixed">
-                <label for="filter-fixed">Фиксированая</label>
+                <input class="radio-input" type="radio" name="fixed" id="filter-fixed">
+                <span class="radio-box"></span>
+                <label class="rad" for="filter-fixed">Фиксированая</label>
               </li>
 
               <li class="grid-item">
-                <input type="radio" name="rubber" id="filter-rubber">
-                <label for="filter-rubber">Резиновая</label>
+                <input class="radio-input" type="radio" name="rubber" id="filter-rubber">
+                <span class="radio-box"></span>
+                <label class="rad" for="filter-rubber">Резиновая</label>
               </li>
 
             </ul>
@@ -92,117 +104,155 @@
 
           <fieldset class="filter-grid">
 
-            <legend class="filter">Особенности:</legend>
+            <legend class="filters">Особенности:</legend>
 
             <ul class="chips-list">
 
               <li class="chips-item">
-                <input type="checkbox" name="slider" id="filter-slider" checked>
-                <label for="filter-slider">Слайдер</label>
+                <input class="check-input" type="checkbox" name="slider" id="filter-slider" checked>
+                <span class="chek-box"></span>
+                <label class="check" for="filter-slider">Слайдер</label>
               </li>
 
               <li class="chips-item">
-                <input type="checkbox" name="advantages" id="filter-advantages">
-                <label for="filter-advantages">Блок преимуществ</label>
+                <input class="check-input" type="checkbox" name="advantages" id="filter-advantages">
+                <span class="chek-box"></span>
+                <label class="check" for="filter-advantages">Блок преимуществ</label>
               </li>
 
               <li class="chips-item">
-                <input type="checkbox" name="news" id="filter-news" checked>
-                <label for="filter-news">Новости</label>
+                <input class="check-input" type="checkbox" name="news" id="filter-news" checked>
+                <span class="chek-box"></span>
+                <label class="check" for="filter-news">Новости</label>
               </li>
 
               <li class="chips-item">
-                <input type="checkbox" name="gallery" id="filter-gallery">
-                <label for="filter-gallery">Галерея</label>
+                <input class="check-input" type="checkbox" name="gallery" id="filter-gallery">
+                <span class="chek-box"></span>
+                <label class="check" for="filter-gallery">Галерея</label>
               </li>
 
               <li class="chips-item">
-                <input type="checkbox" name="basket" id="filter-basket">
-                <label for="filter-basket">Корзина</label>
+                <input class="check-input" type="checkbox" name="basket" id="filter-basket">
+                <span class="chek-box"></span>
+                <label class="check" for="filter-basket">Корзина</label>
               </li>
 
             </ul>
 
-            <button class="show" type="submit">Показать</button>
+            <button class="show" type="submit"><span class="show-text">Показать</span></button>
 
           </fieldset>
 
         </form>
-
-      </div>
-
     </section>
 
     <section class="examples-box">
-
-      <div class="sort-box">
-
-        <h2 class="filter">Сортировать:</h2>
-
-        <ul class="filter-list">
-          <li class="filter-item"><button class="btn-sort btn-price" type="button" disabled>По цене</button></li>
-          <li class="filter-item"><button class="btn-sort btn-type" type="button">По типу</button></li>
-          <li class="filter-item"><button class="btn-sort btn-name" type="button">По названию</button></li>
-          <li class="filter-item"><button class="btn-up" type="button"></button></li>
-          <li class="filter-item"><button class="btn-down" type="button"></button></li>
-        </ul>
-
-      </div>
+      <p class="filters">Сортировать:</p>
+      <ul class="filter-list">
+        <li class="filter-item"><button class="btn-sort btn-price" type="button" disabled>По цене</button></li>
+        <li class="filter-item"><button class="btn-sort btn-type" type="button">По типу</button></li>
+        <li class="filter-item"><button class="btn-sort btn-name" type="button">По названию</button></li>
+        <li class="filter-item"><button class="btn-up" type="button"></button></li>
+        <li class="filter-item"><button class="btn-down" type="button"></button></li>
+      </ul>
 
       <ul class="project-list">
 
         <li class="project-item">
+          <div class="project-head">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+          </div>
           <img class="pic" src="./img/sedona.png" width="358" height="578" alt="Фото макета Седона">
-          <p class="project-name">SEDONA</p>
-          <p class="project-description">Информационный сайт для туристов</p>
-          <p class="buy">
-            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-          </p>
+          <div class="project-footer">
+            <p class="project-name">SEDONA</p>
+            <p class="project-description">Информационный сайт<br> для туристов</p>
+            <p class="buy">
+              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+            </p>
+          </div>
         </li>
 
         <li class="project-item">
+          <div class="project-head">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+          </div>
           <img class="pic" src="./img/pink.png" width="358" height="578" alt="Фото макета Пинк Апп">
-          <p class="project-name">PINK APP</p>
-          <p class="project-description">Продуктовый лендингприложения для iOS<br> и Android</p>
-          <p class="buy">
-            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-          </p>
+          <div class="project-footer">
+            <p class="project-name">PINK APP</p>
+            <p class="project-description">Продуктовый лендинг<br> приложения для iOS и Android</p>
+            <p class="buy">
+              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+            </p>
+          </div>
         </li>
 
         <li class="project-item">
+          <div class="project-head">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+          </div>
           <img class="pic" src="./img/borodinsky.png" width="358" height="578" alt="Фото макета Барбершоп Бородинский">
-          <p class="project-name">BARBERSHOP</p>
-          <p class="project-description">Сайт салона красоты. Для мужчин, да.</p>
-          <p class="buy">
-            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-          </p>
+          <div class="project-footer">
+            <p class="project-name">BARBERSHOP</p>
+            <p class="project-description">Сайт салона красоты.<br> Для мужчин, да.</p>
+            <p class="buy">
+              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+            </p>
+          </div>
         </li>
 
         <li class="project-item">
+          <div class="project-head">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+          </div>
           <img class="pic" src="./img/mishka.png" width="358" height="578" alt="Фото макета Мишка">
-          <p class="project-name">MISHKA</p>
-          <p class="project-description">Интернет-магазин вязаных игрушек</p>
-          <p class="buy">
-            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-          </p>
+          <div class="project-footer">
+            <p class="project-name">MISHKA</p>
+            <p class="project-description">Интернет-магазин<br> вязаных игрушек</p>
+            <p class="buy">
+              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+            </p>
+          </div>
         </li>
 
         <li class="project-item">
+          <div class="project-head">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+          </div>
           <img class="pic" src="./img/aplus.png" width="358" height="578" alt="Фото макета А Плюс">
-          <p class="project-name">A PLUS</p>
-          <p class="project-description">Лендинг курсов повышения квалификации</p>
-          <p class="buy">
-            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-          </p>
+          <div class="project-footer">
+            <p class="project-name">A PLUS</p>
+            <p class="project-description">Лендинг курсов повышения<br> квалификации</p>
+            <p class="buy">
+              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+            </p>
+          </div>
         </li>
 
         <li class="project-item">
+          <div class="project-head">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+          </div>
           <img class="pic" src="./img/kvast.png" width="358" height="578" alt="Фото макета Кваст">
-          <p class="project-name">КВАСТ</p>
-          <p class="project-description">Промо-сайт производителя крафтового кваса</p>
-          <p class="buy">
-            <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
-          </p>
+          <div class="project-footer">
+            <p class="project-name">КВАСТ</p>
+            <p class="project-description">Промо-сайт производителя<br> крафтового кваса</p>
+            <p class="buy">
+              <button class="btn" type="button"><span class="buy-price">9 990 ₽</span></button>
+            </p>
+          </div>
         </li>
 
       </ul>
@@ -212,7 +262,7 @@
         <ul class="control-list">
 
           <li class="control-item">
-            <a class="btn link">1</a>
+            <a class="btn link btn-one">1</a>
           </li>
 
           <li class="control-item">
@@ -296,13 +346,13 @@
 
           <li class="social-item">
             <a class="social-btn link" href="#">
-              <img class="social btn" src="./img/logovk.svg" alt="Логотип ВКонтакте">
+              <div class="more"><img class="social btn" src="./img/logovk.svg" alt="Логотип ВКонтакте"></div>
             </a>
           </li>
 
           <li class="social-item">
             <a class="social-btn link" href="#">
-              <img class="social btn" src="./img/logofb.svg" alt="Логотип Фэйсбука">
+              <div class="more"><img class="social btn" src="./img/logofb.svg" alt="Логотип Фэйсбука"></div>
             </a>
           </li>
 
@@ -311,7 +361,7 @@
               <div class="more"><img class="social btn" src="./img/logoinst.svg" alt="Логотип Инстаграма"></div>
             </a>
           </li>
-          
+
         </ul>
 
 

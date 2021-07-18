@@ -8,8 +8,8 @@
   <link rel="icon" href="./img/favicon/icon.svg">
   <link rel="apple-touch-icon" href="./img/favicon/180.png">
   <link href="manifest.webmanifest" rel="manifest">
-  <link href="style.css" rel="stylesheet">
-  <link href="normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -26,9 +26,9 @@
         </a>
         <ul class="site-navigation">
           <li><a class="link link-nav" href="index.html">Студия</a></li>
-          <li><a class="link link-nav" href="blanc.html">Клиенты</a></li>
+          <li><a class="link link-nav" href="#">Клиенты</a></li>
           <li><a class="link link-nav" href="catalog.html">Магазин</a></li>
-          <li><a class="link link-nav" href="blanc.html">Контакты</a></li>
+          <li><a class="link link-nav" href="#">Контакты</a></li>
         </ul>
       </nav>
       <div class="user-basket">
@@ -194,21 +194,17 @@
 
         <ul class="popup-list">
 
-          <li class="popup-item">
-            <label class="popup-items" for="appointment-name">Ваше имя:</label>
-          </li>
+          <ul class="lol">
+            <li class="popup-item">
+              <label class="popup-items" for="appointment-name">Ваше имя:</label>
+              <input class="popup-text" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+            </li>
 
-          <li class="popup-item">
-            <input class="popup-text" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-          </li>
-
-          <li class="popup-item">
-            <label class="popup-items" for="login-login">Ваш email:</label>
-          </li>
-
-          <li class="popup-item">
-            <input class="popup-text" id="login-login" type="email" name="login" placeholder="email@example.com">
-          </li>
+            <li class="popup-item">
+              <label class="popup-items" for="login-login">Ваш email:</label>
+              <input class="popup-text" id="login-login" type="email" name="login" placeholder="email@example.com">
+            </li>
+          </ul>
 
           <li class="popup-item letter">
             <label class="popup-items" for="appointment-text">Текс письма:</label>
@@ -230,19 +226,19 @@
 
     <div class="container">
 
-      <div class="footer-social">
+      <div class="footer-social main-social">
 
         <ul class="social-list">
 
           <li class="social-item">
             <a class="social-btn link" href="#">
-              <img class="social btn" src="./img/logovk.svg" alt="Логотип ВКонтакте">
+              <div class="more"><img class="social btn" src="./img/logovk.svg" alt="Логотип ВКонтакте"></div>
             </a>
           </li>
 
           <li class="social-item">
             <a class="social-btn link" href="#">
-              <img class="social btn" src="./img/logofb.svg" alt="Логотип Фэйсбука">
+              <div class="more"><img class="social btn" src="./img/logofb.svg" alt="Логотип Фэйсбука"></div>
             </a>
           </li>
 
