@@ -281,9 +281,6 @@
   margin-bottom: 55px;
 }
 
-.slider {
-}
-
 .features-box .btn {
   text-align: center;
   max-width: 140px;
@@ -321,9 +318,6 @@
 .work {
   margin-bottom: 155px;
   margin-top: 80px;
-}
-
-.work-item {
 }
 
 .work-list {
@@ -500,9 +494,11 @@
 
 /* Partners */
 
+
 .partners-list {
   display: flex;
   justify-content: space-between;
+  padding: 0;
   align-items: center;
   list-style: none;
 }
@@ -818,8 +814,7 @@
   grid-template-columns: 760px;
 }
 
-.sort-box {
-}
+
 
 .filter-box {
   display: flex;
@@ -986,10 +981,6 @@
   height: 25px;
   background-image: url("../img/radiooff.svg");
   background-repeat: no-repeat;
-}
-
-.radio-box:hover,
-.radio-box:focus {
 }
 
 .show {
@@ -1235,7 +1226,7 @@
   margin-top: 49px;
 }
 
-.filter-item legend {
+.filter-item .filters {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -1291,13 +1282,14 @@
   justify-content: space-between;
 }
 
-.price-controls label {
+.min-price,
+.max-price {
   text-transform: uppercase;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
 }
 
-.price-controls input {
+.number {
   width: 60px;
   padding: 10px;
   margin-left: 10px;
