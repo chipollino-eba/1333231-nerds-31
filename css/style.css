@@ -678,7 +678,12 @@
   font-weight: 700;
 }
 
+.btn-closed {
+  visibility: hidden;
+}
+
 .btn-closed::after {
+  visibility: visible;
   content: "";
   position: absolute;
   width: 21px;
@@ -693,6 +698,7 @@
 .btn-closed:hover,
 .btn-closed:focus {
   opacity: 1;
+  cursor: pointer;
 }
 
 .popup-item :hover,
