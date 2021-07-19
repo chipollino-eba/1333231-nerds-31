@@ -829,19 +829,19 @@
 }
 
 .btn-up {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 11px solid #231f20;
+  border: 10px solid transparent;
+  border-top: 20px solid black;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-down {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 11px solid #231f20;
+  border: 10px solid transparent;
+  border-bottom: 20px solid black;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .examples-box .filters {
