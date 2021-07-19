@@ -494,7 +494,6 @@
 
 /* Partners */
 
-
 .partners-list {
   display: flex;
   justify-content: space-between;
@@ -661,7 +660,7 @@
   margin: 0;
 }
 
-.lol {
+.form-name {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
@@ -814,11 +813,7 @@
   grid-template-columns: 760px;
 }
 
-
-
 .filter-box {
-  display: flex;
-  justify-content: space-around;
   width: 260px;
 }
 
@@ -1209,7 +1204,6 @@
 }
 
 .btn-one {
-  /* padding: 16px 20px 16px 20px; */
   background: var(--basic-white);
   outline: 15px solid var(--basic-white);
 }
@@ -1309,8 +1303,3 @@
   font-weight: 700;
   margin-bottom: 14px;
 }
-
-
-
-
-
